@@ -24,6 +24,9 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
+# Slim framework
+DISABLE_SLIM_FRAMEWORK := true
+
 PRODUCT_NAME := candy_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
