@@ -144,6 +144,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 # NFC
 BOARD_NFC_CHIPSET := pn547
 
+# PDFIUM
+TARGET_NEEDS_PDFIUM_BIGINT := true
+
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 
@@ -192,6 +195,7 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 # Inherit from QC proprietary
 ifneq ($(QCPATH),)
 -include $(QCPATH)/common/msm8974/BoardConfigVendor.mk
+endif
 
 # Bluetooth
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
@@ -199,7 +203,6 @@ FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 # QCNE
 ifeq ($(BOARD_USES_QCNE),true)
 TARGET_LDPRELOAD := libNimsWrap.so
-endif
 endif
 
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
