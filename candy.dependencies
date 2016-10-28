@@ -1,14 +1,14 @@
 
 [
   {
-    "repository":  "SlimRoms/kernel_oneplus_msm8974",
+    "repository":  "CandyDevices/kernel_oneplus_msm8974",
     "target_path": "kernel/oneplus/msm8974",
-    "branch":      "ng7.0"
+    "branch":      "c7"
   },
   {
-    "repository":  "SlimRoms/device_oppo_common",
+    "repository":  "CandyDevices/device_oppo_common",
     "target_path": "device/oppo/common",
-    "branch":      "ng7.0"
+    "branch":      "c7"
   },
   {
     "repository":  "SlimRoms/android_external_sony_boringssl-compat",
